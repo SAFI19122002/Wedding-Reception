@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Reception Invitation - Zaid Ahmad & Aliya Sadaf</title>
+    <meta name="description" content="Digital wedding invitation for Zaid Ahmad and Aliya Sadaf's wedding reception (Dawat-e-Walima)">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="bismillah-container">
+                <p class="bismillah-arabic">بسم الله الرحمن الرحيم</p>
+                <p class="bismillah-translation">In the name of Allah, the Most Beneficent & Merciful</p>
+            </div>
+            
+            <div class="hero-main">
+                <h1 class="event-title">Wedding Reception</h1>
+                <div class="couple-names">
+                    <span class="groom-name">Zaid Ahmad</span>
+                    <span class="ampersand">&</span>
+                    <span class="bride-name">Aliya Sadaf</span>
+                </div>
+                <p class="wedding-date">Sunday, 7th September 2025</p>
+            </div>
+            
+            <div class="decorative-elements">
+                <div class="ornament-top"></div>
+                <div class="ornament-bottom"></div>
+            </div>
+        </div>
+        
+        <div class="geometric-pattern"></div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section" id="countdown">
+        <div class="container">
+            <h2>Counting Down to Our Special Day</h2>
+            <div class="countdown-timer" id="countdown-timer">
+                <div class="time-unit">
+                    <span class="time-number" id="days">0</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">0</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">0</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">0</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-details" id="details">
+        <div class="container">
+            <div class="details-card">
+                <h2>Dawat-e-Walima</h2>
+                <p class="event-subtitle">Wedding Reception</p>
+                
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <h3>Date</h3>
+                        <p>Sunday, 7th September 2025</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Time</h3>
+                        <p>Dinner 7:00 pm onwards</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Venue</h3>
+                        <p>Syed Manzil<br>Idgah Lane, Barahpura, Bhagalpur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Information -->
+    <section class="family-info" id="family">
+        <div class="container">
+            <h2>Families</h2>
+            <div class="family-grid">
+                <div class="family-card">
+                    <h3>Groom</h3>
+                    <p class="person-name">Zaid Ahmad</p>
+                    <p class="parent-info">Son of F.A. Iqbal Ahmad</p>
+                </div>
+                <div class="family-card">
+                    <h3>Bride</h3>
+                    <p class="person-name">Aliya Sadaf</p>
+                    <p class="parent-info">Daughter of Syed Shaeque Ahmad</p>
+                    <p class="address-info">Hamid Manzil, Jabbarchak, Bhagalpur (Bihar)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section" id="rsvp">
+        <div class="container">
+            <h2>RSVP</h2>
+            <p>We would be honored by your presence at our special celebration</p>
+            
+            <form class="rsvp-form" id="rsvp-form">
+                <div class="form-group">
+                    <label for="guest-name" class="form-label">Your Name</label>
+                    <input type="text" id="guest-name" name="guestName" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-count" class="form-label">Number of People Attending</label>
+                    <select id="guest-count" name="guestCount" class="form-control" required>
+                        <option value="">Please select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5+ People</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-info" class="form-label">Contact Number</label>
+                    <input type="tel" id="contact-info" name="contactInfo" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dietary-preferences" class="form-label">Dietary Preferences / Special Requests</label>
+                    <textarea id="dietary-preferences" name="dietaryPreferences" class="form-control" rows="3" placeholder="Any special dietary requirements or requests..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--full-width rsvp-submit">Confirm Attendance</button>
+            </form>
+            
+            <div class="rsvp-success hidden" id="rsvp-success">
+                <h3>Thank You!</h3>
+                <p>Your RSVP has been received. We look forward to celebrating with you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Location & Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Venue Address</h3>
+                    <p>Syed Manzil<br>Idgah Lane, Barahpura<br>Bhagalpur</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Host Contact</h3>
+                    <p><strong>F.A. Iqbal Ahmad</strong></p>
+                    <p>Mobile: <a href="tel:6203014489">6203014489</a></p>
+                    <p>H.No. - BE-019-0121<br>Idgah Lane, Barahpura<br>Bhagalpur-812001</p>
+                </div>
+            </div>
+            
+            <div class="welcome-message">
+                <p>All Relatives & Friends cordially invited</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
